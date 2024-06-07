@@ -1,9 +1,6 @@
-﻿using System;
+﻿using Ispit.Model;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Ispit.Model;
 
 namespace Ispit.Konzola
 {
@@ -27,14 +24,14 @@ namespace Ispit.Konzola
                 DateTime datumRodjenja;
                 while (!DateTime.TryParse(Console.ReadLine(), out datumRodjenja))
                 {
-                    Console.WriteLine("Unesite valjani datum rođenja (u formatu dd-mm-yyyy):");
+                    Console.WriteLine("Unesite važeći datum rođenja (u formatu dd-mm-yyyy):");
                 }
 
                 Console.WriteLine("Unesite prosjek učenika:");
                 double prosjek;
                 while (!double.TryParse(Console.ReadLine(), out prosjek) || prosjek < 1 || prosjek > 5)
                 {
-                    Console.WriteLine("Unesite valjani prosjek (od 1 do 5):");
+                    Console.WriteLine("Unesite važeći prosjek (od 1 do 5):");
                 }
 
                 Ucenik ucenik = new Ucenik(ime, prezime, datumRodjenja, prosjek);

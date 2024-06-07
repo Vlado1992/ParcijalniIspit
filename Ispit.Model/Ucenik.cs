@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Ispit.Model
 {
@@ -67,7 +63,7 @@ namespace Ispit.Model
         {           
             Console.WriteLine($"Ime: {Ime}");
             Console.WriteLine($"Prezime: {Prezime}");
-            Console.WriteLine($"Datum Rođenja: {DatumRodjenja.ToString("dd-mm-yyyy")}");
+            Console.WriteLine($"Datum Rođenja: {DatumRodjenja.ToString("dd-MM-yyyy")}");
             Console.WriteLine($"Starost: {Starost()} godina");
             Console.WriteLine($"Prosjek: {Prosjek} - {UkupanProsjek()}");
             Console.WriteLine("--------------------------------------");
